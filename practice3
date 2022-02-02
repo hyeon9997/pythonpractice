@@ -1,0 +1,13 @@
+
+#퀴즈 #3 풀이
+site = "http://naver.com"
+index = site.index(".")
+pass1 = site[7:index]
+print(pass1[:3]+ str(len(pass1))+ str(pass1.count("e"))+"!")
+
+#퀴즈 #3 모범답안
+url = "http://naver.com"
+my_str = url.replace("http://", "")
+my_str1 = my_str[:my_str.index(".")]
+password  = my_str1[:3] + str(len(my_str)) + str(my_str.count("e"))+"!"
+print("{0}의 비밀번호는 {1}입니다.".format(url, password))
